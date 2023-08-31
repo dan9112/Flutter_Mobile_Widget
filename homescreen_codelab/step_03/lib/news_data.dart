@@ -30,11 +30,6 @@ List<NewsArticle> getNewsStories() {
     NewsArticle(
       title: 'Flutter Community saves world',
       description: "They're just that nice",
-    ),
-    NewsArticle(
-      title: 'Flutter DAU surpasses 10 billion',
-      description:
-          'There are more Flutter users than there are human beings. What gives?',
     )
   ];
 }

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_container"
+    style="@style/Widget.Android.AppWidget.Container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:theme="@style/Theme.Android.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/headline_title"
+        style="@style/Widget.Android.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/headline_description"
+        style="@style/Widget.Android.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        tools:text="Title" />
+
+    <!--New: add this image view -->
+    <ImageView
+        android:id="@+id/widget_image"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="-134dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/star_big_on"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+</LinearLayout>
